@@ -59,6 +59,7 @@ mod avr_gnu_base;
 mod dragonfly_base;
 mod freebsd_base;
 mod fuchsia_base;
+mod gnu_base;
 mod haiku_base;
 mod hermit_base;
 mod hermit_kernel_base;
@@ -815,6 +816,8 @@ supported_targets! {
     ("aarch64_be-unknown-linux-gnu", aarch64_be_unknown_linux_gnu),
     ("aarch64-unknown-linux-gnu_ilp32", aarch64_unknown_linux_gnu_ilp32),
     ("aarch64_be-unknown-linux-gnu_ilp32", aarch64_be_unknown_linux_gnu_ilp32),
+
+    ("i686-unknown-gnu", i686_unknown_gnu),
 }
 
 /// Everything `rustc` knows about how to compile for a specific target.
